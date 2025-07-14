@@ -1,4 +1,5 @@
 # PHP ONIX 3.0 Parser
+
 This package is a simple PHP library for reading ONIX 3.0 files in the general formats Short and Ref. Helper functions in the individual units make it easy to read out the details that you need from the data record. Text elements in different formats as well as the different ONIX date formats are automatically parsed and can therefore be used easily.
 
 __This package is currently under development. Although most fields should be detected and parsed by the library, some fields still need more work.__
