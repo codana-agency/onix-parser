@@ -5,6 +5,7 @@ namespace Ribal\Onix;
 use Ribal\Onix\Message\Message;
 use Ribal\Onix\Normalizer\CodeListNormalizer;
 use Ribal\Onix\Normalizer\DateNormalizer;
+use Ribal\Onix\Normalizer\ProductFormFeatureNormalizer;
 use Ribal\Onix\Normalizer\ShortTagNameConverter;
 use Ribal\Onix\Normalizer\TextNormalizer;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
@@ -59,6 +60,7 @@ class Parser
         $this->normalizers = [
             new ArrayDenormalizer(),
             new CodeListNormalizer($language),
+            new ProductFormFeatureNormalizer($language),
             new DateNormalizer(),
             new TextNormalizer(),
             new ObjectNormalizer(
